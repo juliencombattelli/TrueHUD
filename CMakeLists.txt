@@ -7,6 +7,8 @@ project(
 )
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
+add_compile_definitions(ENABLE_COMMONLIBSSE_TESTING=1)
+
 if("${PROJECT_SOURCE_DIR}" STREQUAL "${PROJECT_BINARY_DIR}")
 	message(FATAL_ERROR "in-source builds are not allowed")
 endif()
