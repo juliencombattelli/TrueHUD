@@ -58,6 +58,18 @@
       ],
       "name": "vs2022-windows",
       "toolset": "v143"
+    },
+    {
+      "cacheVariables": {
+        "CMAKE_CXX_FLAGS": "/EHsc /MP /W4"
+      },
+      "generator": "Ninja",
+      "inherits": [
+        "cmake-dev",
+        "vcpkg",
+        "windows"
+      ],
+      "name": "ninja-windows"
     }
   ],
   "version": 3
