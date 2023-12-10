@@ -116,7 +116,8 @@ extern "C" DLLEXPORT void* SKSEAPI RequestPluginAPI(const TRUEHUD_API::Interface
 {
 	auto api = Messaging::TrueHUDInterface::GetSingleton();
 
-	logger::info("TrueHUD::RequestPluginAPI called, InterfaceVersion {}", a_interfaceVersion);
+	using InterfaceVersionIntType = std::underlying_type_t<TRUEHUD_API::InterfaceVersion>;
+	logger::info("TrueHUD::RequestPluginAPI called, InterfaceVersion {}", static_cast<InterfaceVersionIntType>(a_interfaceVersion));
 
 	switch (a_interfaceVersion) {
 	case TRUEHUD_API::InterfaceVersion::V1:
