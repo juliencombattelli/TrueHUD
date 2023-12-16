@@ -26,6 +26,10 @@ namespace util
 
 #define DLLEXPORT __declspec(dllexport)
 
-#define RELOCATION_OFFSET(SE, AE) REL::VariantOffset(SE, AE, 0).offset()
+#ifdef SKYRIM_SUPPORT_AE
+#define RELOCATION_OFFSET(SE, AE) AE
+#else
+#define RELOCATION_OFFSET(SE, AE) SE
+#endif
 
 #include "Plugin.h"

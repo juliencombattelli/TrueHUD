@@ -7,8 +7,8 @@
 	* Add the environment variable `VCPKG_ROOT` with the value as the path to the folder containing vcpkg
 * [Visual Studio Community 2022](https://visualstudio.microsoft.com/)
 	* Desktop development with C++
-* [CommonLibSSE-NG](https://github.com/CharmedBaryon/CommonLibSSE-NG/tree/v3.4.0)
-	* Add the environment variable `CommonLibSSEPath_NG` with the value as the path to the folder containing CommonLibSSE-NG
+* [CommonLibSSE](https://github.com/powerof3/CommonLibSSE/tree/aec5f9b5c5839fdb0241b1b06076fa85fbfd4678)
+	* Add the environment variable `CommonLibSSEPath` with the value as the path to the folder containing CommonLibSSE
 
 ## User Requirements
 * [Address Library for SKSE](https://www.nexusmods.com/skyrimspecialedition/mods/32444)

@@ -72,7 +72,7 @@ namespace Scaleform
 	float ShoutIndicator::GetPercent()
 	{
 		auto playerCharacter = RE::PlayerCharacter::GetSingleton();
-		auto currentProcess = playerCharacter->GetActorRuntimeData().currentProcess;
+		auto currentProcess = playerCharacter->currentProcess;
 		
 		float voiceRecoveryTime = 0.f;
 		float cooldown = _cooldown;

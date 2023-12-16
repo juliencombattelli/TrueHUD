@@ -18,7 +18,7 @@ namespace Hooks
 			_PickUpObject = PlayerCharacterVtbl.write_vfunc(0xCC, PickUpObject);
 
 			auto& trampoline = SKSE::GetTrampoline();
-#
+
 			REL::Relocation<uintptr_t> hook1{ RELOCATION_ID(51907, 52845) };  // 8D53D0, 905A10 // FlashHudMenuMeter
 			REL::Relocation<uintptr_t> hook2{ RELOCATION_ID(50747, 51642) };  // 87FFF0, 8B0220 // SetHUDCartMode
 			REL::Relocation<uintptr_t> hook3{ RELOCATION_ID(50771, 51666) };  // 881CC0, 8B1F40 // HUDChargeMeter::Update
